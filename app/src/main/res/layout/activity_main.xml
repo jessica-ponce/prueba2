@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre del archivo"
+        android:padding="10dp"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/editText1"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Introduzca aqui los datos"
+        android:inputType="textMultiLine"
+        android:maxLines="15"
+        android:minLines="5"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/black"
+        android:padding="5dp"
+        android:text="GUARDAR"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="-48dp"
+        android:background="@color/black"
+        android:padding="5dp"
+        android:text="LEER"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
